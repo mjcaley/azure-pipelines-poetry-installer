@@ -1,0 +1,30 @@
+{
+    "id": "7999f301-e006-44d6-aba7-161a48b4620f",
+    "name": "poetry",
+    "friendlyName": "Poetry",
+    "description": "Install the Poetry dependency management tool",
+    "helpMarkDown": "",
+    "category": "Utility",
+    "author": "Michael Caley",
+    "version": {
+        "Major": 1,
+        "Minor": 0,
+        "Patch": 0
+    },
+    "instanceNameFormat": "Installing Poetry",
+    "inputs": [
+        {
+            "name": "samplestring",
+            "type": "string",
+            "label": "Sample String",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "A sample string"
+        }
+    ],
+    "execution": {
+        "Node": {
+            "target": "index.js"
+        }
+    }
+}

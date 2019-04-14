@@ -1,0 +1,16 @@
+import tl = require("azure-pipelines-task-lib");
+
+async function run() {
+    try {
+        const inputString: string = tl.getInput('samplestring', true);
+        if (inputString == 'bad') {
+            tl.setResult(tl.TaskResult.Failed, 'Bad input given');
+            return;
+        }
+    }
+    catch (err) {
+        tl.setResult(tl.TaskResult.Failed, err.message);
+    }
+}
+
+run();
